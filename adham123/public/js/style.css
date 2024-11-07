@@ -1,0 +1,275 @@
+    .navbar {
+      background: linear-gradient(145deg, #104113, #114b15);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      color: #fff !important;
+      font-size: 1.4rem;
+    }
+
+    .nav-btn {
+      background: transparent;
+      color: rgba(255, 255, 255, 0.9);
+      border: none;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-btn:hover,
+    .nav-link:hover {
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .dropdown-menu {
+      background: #114b15;
+      border: none;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-item {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .dropdown-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .home {
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(./jungle/WhatsApp\ Image\ 2024-11-07\ at\ 22.22.54_3bff7e28.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .home .content {
+      text-align: left;
+      padding-top: 150px;
+    }
+
+    .home .content h5 {
+      color: #f9f9f9;
+      font-size: 38px;
+      font-weight: 500;
+      text-shadow: 0px 1px 1px black;
+    }
+
+    .change-content::after {
+      content: "";
+      color: #ffa500;
+      text-shadow: 0px 1px 1px black;
+      animation: change-text 10s infinite linear;
+
+    }
+
+    @keyframes change-text {
+      0% {
+        content: "Part one";
+      }
+
+      10% {
+        content: "Part Two";
+      }
+
+      20% {
+        content: "Part Three";
+      }
+
+      30% {
+        content: "Part Four";
+      }
+
+      40% {
+        content: "Part Five";
+      }
+
+      50% {
+        content: "Part six";
+      }
+
+      60% {
+        content: "Part seven";
+      }
+
+      70% {
+        content: "Part Eight";
+      }
+
+      80% {
+        content: "Part Nine";
+      }
+
+      90% {
+        content: "Part Ten";
+      }
+
+    }
+
+    .home .content p {
+      color: #f9f9f9;
+      font-size: 15px;
+      font-weight: 600;
+      text-shadow: 0px 1px 1px black;
+      margin-bottom: 30px;
+      margin-top: 5px;
+
+    }
+
+
+    @media (max-width:850px) {
+      .home {
+        background-position: 50%;
+      }
+    }
+
+    @media (max-width:450px) {
+      .home .content hs5 {
+        font-size: 25px;
+      }
+
+      .home .content h1 {
+        font-size: 38px;
+      }
+
+      .home .content p {
+        font-size: 13px;
+      }
+
+      #communications,
+      #download {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+
+      form {
+        margin-top: 10px;
+      }
+
+      input[type="email"] {
+        padding: 10px;
+        width: 200px;
+      }
+
+      button {
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .parts-section {
+        padding: 40px 0;
+        background-color: #f9f9f9;
+      }
+.parts-section .container{
+  margin:0;
+  padding:0
+}
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .section-description {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        color: #666;
+      }
+
+      .parts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0 10px;
+      }
+
+      .part-item{
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s;
+      }
+
+      .part-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .part-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .part-title {
+        font-size: 1.5rem;
+        margin: 15px 0 10px;
+        color: #333;
+      }
+
+      .part-description {
+        font-size: 1rem;
+        color: #777;
+        margin-bottom: 15px;
+      }
+
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+          /* Start slightly above */
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+          /* End at normal position */
+        }
+      }
+
+      .animated {
+        animation: fadeIn 1s ease forwards;
+        /* Apply the animation */
+      }
+    }
+      .part-item{box-shadow: 1px -3px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 9px;
+      }
+    
+.part-item h3,p{
+  margin-left: 10px;
+  font-weight: 200;
+  color: #114b15;
+}
+.part-item a{
+  margin: 0 0 10px 10px;
+
+}
+.part-item a:hover{
+        transform: scale(1);
+          transition: 0.3s;
+}
